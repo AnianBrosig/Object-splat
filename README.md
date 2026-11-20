@@ -614,6 +614,7 @@ synthetic rotating textured cube (GrabCut + SIFT + pycolmap): 90/90 frames regis
 - [docs/sfm-known-view-angles.md](docs/sfm-known-view-angles.md) - improving SfM by re-detecting views seen before (loop closure, pose-guided re-matching, multi-video registration)
 - [docs/implementation-plan.md](docs/implementation-plan.md) - how to implement camera calibration, mask hole filling, the quality stage and pose-guided re-matching
 - [docs/realtime-pose-tracking.md](docs/realtime-pose-tracking.md) - using the reconstruction to locate, mask and orient the object live from a camera
+- [docs/classic-pipeline.md](docs/classic-pipeline.md) - how to go back to the pre-2026-11-17 algorithms (slower, the better quality for the tested videos): the exact settings, how to apply them, what was verified, and how to find which new switch costs quality
 
 ---
 
