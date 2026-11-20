@@ -1,0 +1,12 @@
+# core: everything except the torch models (grabcut + SIFT + COLMAP path works with only these)
+numpy<2
+opencv-python-headless<4.12
+scipy<1.14
+pandas<2.3
+matplotlib
+fastapi
+uvicorn
+python-multipart
+pycolmap            # macOS x86_64 wheels exist (3.12.x); alternative: colmap CLI from conda-forge
+pytest
+httpx

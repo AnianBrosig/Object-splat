@@ -1,0 +1,87 @@
+[
+ {
+  "name": "pen box",
+  "file": "objects/pen-box.physics.json",
+  "mass_kg": 0.086,
+  "size_m": [
+   0.1514,
+   0.0383,
+   0.0873
+  ],
+  "solidity": 1.001,
+  "parts": 1,
+  "downloads": [
+   "objects/pen-box.stl",
+   "objects/pen-box.obj",
+   "objects/pen-box.ply"
+  ]
+ },
+ {
+  "name": "gas can (silver)",
+  "file": "objects/gas-can--silver.physics.json",
+  "mass_kg": 0.101,
+  "size_m": [
+   0.2017,
+   0.0519,
+   0.0556
+  ],
+  "solidity": 1.223,
+  "parts": 1,
+  "downloads": [
+   "objects/gas-can--silver.stl",
+   "objects/gas-can--silver.obj",
+   "objects/gas-can--silver.ply"
+  ]
+ },
+ {
+  "name": "gas can",
+  "file": "objects/gas-can.physics.json",
+  "mass_kg": 0.121,
+  "size_m": [
+   0.1972,
+   0.0602,
+   0.0573
+  ],
+  "solidity": 1.041,
+  "parts": 1,
+  "downloads": [
+   "objects/gas-can.stl",
+   "objects/gas-can.obj",
+   "objects/gas-can.ply"
+  ]
+ },
+ {
+  "name": "hacky sack",
+  "file": "objects/hacky-sack.physics.json",
+  "mass_kg": 0.023,
+  "size_m": [
+   0.0646,
+   0.0545,
+   0.0558
+  ],
+  "solidity": 1.055,
+  "parts": 1,
+  "downloads": [
+   "objects/hacky-sack.stl",
+   "objects/hacky-sack.obj",
+   "objects/hacky-sack.ply"
+  ]
+ },
+ {
+  "name": "noodle cup",
+  "file": "objects/noodle-cup.physics.json",
+  "mass_kg": 0.1,
+  "size_m": [
+   0.1263,
+   0.0867,
+   0.0905
+  ],
+  "solidity": 1.036,
+  "parts": 1,
+  "downloads": [
+   "objects/noodle-cup.stl",
+   "objects/noodle-cup.obj",
+   "objects/noodle-cup.ply"
+  ]
+ }
+]

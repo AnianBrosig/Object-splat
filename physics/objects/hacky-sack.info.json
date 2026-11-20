@@ -1,0 +1,36 @@
+{
+ "splats": 10547,
+ "grid": [
+  114,
+  95,
+  100
+ ],
+ "voxel_m": 0.0006132075471698112,
+ "size_m": [
+  0.0646,
+  0.0545,
+  0.0558
+ ],
+ "volume_cm3": 90.4,
+ "solidity": 1.055,
+ "convex_parts": 1,
+ "vertices": 56970,
+ "faces": 113932,
+ "scale_to_m": 0.07137854768657673,
+ "density_level": 0.06542653404176235,
+ "primitives": [
+  "sphere"
+ ],
+ "faces_written": 56958,
+ "name": "hacky-sack",
+ "mass_kg": 0.023,
+ "files": [
+  "hacky-sack.stl",
+  "hacky-sack.obj",
+  "hacky-sack.ply",
+  "hacky-sack.physics.json"
+ ],
+ "size_cm": 6.5,
+ "density": 250,
+ "job": "20261113-215535-IMG_8902-25f5"
+}

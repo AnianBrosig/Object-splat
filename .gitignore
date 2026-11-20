@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime output (one folder per job: frames, masks, COLMAP databases, splats)
+jobs/
+
+# Downloaded model weights (Cutie etc., fetched on first use)
+weights/
+
+# Input videos (large); keep the folder itself
+videos/*
+!videos/.gitkeep
+
+# Generated 3D / media files outside jobs/
+*.ply
+*.splat
+*_720p.mp4
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp

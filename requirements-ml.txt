@@ -1,0 +1,7 @@
+# torch is frozen at 2.2.2 on Intel macOS (last x86_64 wheels); needs Python 3.11/3.12 and numpy<2
+torch==2.2.2
+torchvision==0.17.2
+kornia
+lightglue @ git+https://github.com/cvg/LightGlue.git
+cutie @ git+https://github.com/hkchengrex/Cutie.git
+scikit-image<0.25   # marching cubes for `gsturn export-mesh`

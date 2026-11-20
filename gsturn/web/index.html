@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>turntable2splat</title>
+<link rel="stylesheet" href="/static/style.css">
+<script type="importmap">{"imports": {"three": "/static/vendor/three.module.js"}}</script>
+</head>
+<body>
+<header>
+  <h1>turntable2splat</h1>
+  <select id="jobSelect" title="jobs"><option value="">+ new job</option></select>
+  <span id="doctorPill" class="pill">doctor…</span>
+  <span class="spacer"></span>
+  <span id="runState" class="pill"></span>
+</header>
+
+<main>
+  <!-- 1 input -->
+  <section id="inputSec" class="card">
+    <h2><span class="num">1</span> Input</h2>
+    <div class="row wrap">
+      <div class="col">
+        <label class="lbl">Video from <code>videos/</code></label>
+        <div id="videoList" class="videolist"></div>
+        <div id="drop" class="drop">Drop a video here or <label class="link">choose a file<input id="fileInput" type="file" accept="video/*" hidden></label></div>
+        <div id="uploadBar" class="bar hidden"><div></div></div>
+      </div>
+      <div class="col">
+        <label class="lbl">Parameters</label>
+        <div id="params" class="params"></div>
+        <details><summary>All config fields</summary><div id="paramsAll" class="params"></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 box -->
+  <section id="boxSec" class="card hidden">
+    <h2><span class="num">2</span> First-frame box</h2>
+    <p class="muted">Drag a box around the <b>object</b>. Optionally switch to <b>hand</b> and box each hand.
+      Keys: <kbd>1</kbd> object, <kbd>2</kbd> hand, <kbd>3</kbd> background, <kbd>Esc</kbd> cancel drag, <kbd>Ctrl/Cmd+Z</kbd> undo.
+      Right-click a box to delete it. Boxes are relative to the image, so they can be drawn on the video's first frame before any processing.</p>
+    <div class="row">
+      <div class="seg">
+        <button data-mode="object" class="on">Object box</button><button data-mode="hand">Hand box</button><button data-mode="bg" title="area inside the object box that is certainly background (e.g. table next to a thin diagonal object)">Background box</button>
+      </div>
+      <button id="undoBox" title="remove the last box (Ctrl/Cmd+Z)">Undo</button>
+      <button id="clearBoxes">Clear</button>
+      <label class="muted" title="keep the boxes when another video is selected (same framing in every clip)"><input type="checkbox" id="keepBoxes"> keep when switching video</label>
+      <span id="boxInfo" class="muted mono"></span>
+    </div>
+    <div class="canvasWrap"><canvas id="boxCanvas"></canvas></div>
+    <div class="row">
+      <button id="startBtn" class="primary" disabled>Start</button>
+      <button id="runBtn" class="primary hidden" disabled>Run pipeline (segment → export)</button>
+      <label class="muted">to stage <select id="runTo"></select></label>
+      <span id="inputMsg" class="muted"></span>
+    </div>
+    <div class="row" id="queueAdd">
+      <button id="queueAddBtn" title="remember this video with its boxes, then pick the next one">+ Add to queue</button>
+      <button id="queueAllBtn" title="queue every video in the list that is not queued yet, all with the boxes drawn now">+ Add all videos (these boxes)</button>
+    </div>
+  </section>
+
+  <!-- 2b bulk queue -->
+  <section id="queueSec" class="card hidden">
+    <h2><span class="num">2b</span> Bulk queue <span class="spacer"></span>
+      <button id="queueCancel" class="danger hidden">Cancel queue</button></h2>
+    <p class="muted">Videos are processed one after another, each as its own job. Videos without an object box stop after frame selection.</p>
+    <div id="queueList" class="queue"></div>
+    <div class="row">
+      <button id="queueStart" class="primary" disabled>Start queue</button>
+      <button id="queueClear">Clear</button>
+      <span id="queueMsg" class="muted"></span>
+    </div>
+    <div id="batchList" class="queue"></div>
+  </section>
+
+  <!-- 3 pipeline -->
+  <section id="pipeSec" class="card hidden">
+    <h2><span class="num">3</span> Pipeline <span class="spacer"></span>
+      <button id="cancelBtn" class="danger" disabled>Cancel</button>
+      <a id="dlBtn" class="btn" href="#">Download job</a></h2>
+    <table id="stages" class="stages"><tbody></tbody></table>
+  </section>
+
+  <!-- 4 gallery -->
+  <section id="gallerySec" class="card hidden">
+    <h2><span class="num">4</span> Gallery</h2>
+    <div id="galleryTabs" class="tabs"></div>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <!-- 4b splat viewer -->
+  <section id="viewerSec" class="card hidden">
+    <h2><span class="num">4b</span> Splat viewer <span class="spacer"></span>
+      <select id="viewerSel" title="which splat file to show"></select>
+      <button id="viewerOpen" class="primary">Open viewer</button>
+      <button id="viewerReset" class="hidden" title="back to the starting camera">Reset view</button></h2>
+    <div id="viewerBox" class="viewerBox"><div id="viewerMsg" class="muted">Drag to orbit, right-drag to pan, wheel to zoom.
+      Opens a WebGL view of the trained splat; the de-lit version appears here when it exists.</div></div>
+  </section>
+
+  <!-- 5 debug -->
+  <section id="debugSec" class="card hidden">
+    <h2><span class="num">5</span> Debug</h2>
+    <div id="debugTabs" class="tabs">
+      <button data-tab="log" class="on">Log</button><button data-tab="events">Events</button>
+      <button data-tab="stats">Stage stats</button><button data-tab="config">config.json</button>
+      <button data-tab="doctor">Doctor</button>
+    </div>
+    <div id="debugBody" class="debug"></div>
+  </section>
+</main>
+
+<div id="lightbox" class="lightbox hidden"><img alt=""><div class="cap"></div></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

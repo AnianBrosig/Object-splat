@@ -1,0 +1,36 @@
+{
+ "splats": 28101,
+ "grid": [
+  113,
+  37,
+  36
+ ],
+ "voxel_m": 0.0021505376344086026,
+ "size_m": [
+  0.1972,
+  0.0602,
+  0.0573
+ ],
+ "volume_cm3": 403.7,
+ "solidity": 1.041,
+ "convex_parts": 1,
+ "vertices": 10520,
+ "faces": 21036,
+ "scale_to_m": 0.07796355295089001,
+ "density_level": 0.847487211227417,
+ "primitives": [
+  "cylinder"
+ ],
+ "faces_written": 21036,
+ "name": "gas-can",
+ "mass_kg": 0.121,
+ "files": [
+  "gas-can.stl",
+  "gas-can.obj",
+  "gas-can.ply",
+  "gas-can.physics.json"
+ ],
+ "size_cm": 20.0,
+ "density": 300,
+ "job": "20261113-215535-IMG_8901-5c68"
+}

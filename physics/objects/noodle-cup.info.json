@@ -1,0 +1,36 @@
+{
+ "splats": 43734,
+ "grid": [
+  113,
+  82,
+  81
+ ],
+ "voxel_m": 0.0011792452830188679,
+ "size_m": [
+  0.1263,
+  0.0867,
+  0.0905
+ ],
+ "volume_cm3": 499.7,
+ "solidity": 1.036,
+ "convex_parts": 1,
+ "vertices": 35150,
+ "faces": 70296,
+ "scale_to_m": 0.10052767927642069,
+ "density_level": 0.4004307627677913,
+ "primitives": [
+  "cylinder"
+ ],
+ "faces_written": 57402,
+ "name": "noodle-cup",
+ "mass_kg": 0.1,
+ "files": [
+  "noodle-cup.stl",
+  "noodle-cup.obj",
+  "noodle-cup.ply",
+  "noodle-cup.physics.json"
+ ],
+ "size_cm": 12.5,
+ "density": 200,
+ "job": "20261116-222145-IMG_8924-1978"
+}

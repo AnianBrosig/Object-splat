@@ -1,0 +1,7 @@
+make sure to ignore areas that have montionblur, are not focused or contain bad reflections
+test on the other videos i added as well using the full video length
+fill in small voids in the masks to get better images
+list options how to deal with different lighting conditions/shadows/partial reflections
+report on how sfm quality could be increased by redetection known view angles
+describe, how the generated data could be used to locate, mask, and determine the orientation of the object in real time using a camera
+now that all videos are inferred, 

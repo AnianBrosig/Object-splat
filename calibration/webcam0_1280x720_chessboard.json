@@ -1,0 +1,28 @@
+{
+  "camera": "MacBook Pro 2019 FaceTime HD (webcam 0)",
+  "source": "videos/webcam0_20261024-191736.mp4",
+  "width": 1280,
+  "height": 720,
+  "model": "PINHOLE",
+  "fx": 859.993,
+  "fy": 859.993,
+  "cx": 639.5,
+  "cy": 359.5,
+  "dist": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rms_px": 0.8067,
+  "views": 245,
+  "pattern": [
+    6,
+    6
+  ],
+  "square_mm": 22.0,
+  "principal_point": "fixed at the image centre (board views are nearly face-on)",
+  "hfov_deg": 73.31,
+  "created": "2026-10-24 21:13:21",
+  "note": "chessboard only; views nearly face-on (max tilt < 30 deg), so f is weakly determined (850-1000 px fit almost equally well)"
+}

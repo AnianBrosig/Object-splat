@@ -1,0 +1,47 @@
+{
+  "camera": "iPhone 17 Pro Max",
+  "source": "videos/calibration.MOV",
+  "source_sha1": "1f046e799a208b95730d23539f7571da3c99bcfc",
+  "source_size": [
+    3840,
+    2160
+  ],
+  "fps": 30.0,
+  "width": 1280,
+  "height": 720,
+  "model": "PINHOLE",
+  "fx": 1076.902,
+  "fy": 1076.902,
+  "cx": 650.922,
+  "cy": 373.444,
+  "dist": [
+    0.2343703416868579,
+    -0.7780403461805966,
+    0.0,
+    0.0
+  ],
+  "dist_fitted": [
+    0.23437,
+    -0.77804,
+    0.0,
+    0.0
+  ],
+  "rms_px": 1.0041,
+  "rms_free_px": 1.0041,
+  "rms_fixed_px": 1.2428,
+  "dist_shift_central_px": 7.756,
+  "views": 39,
+  "detections": 73,
+  "pattern": [
+    6,
+    6
+  ],
+  "square_mm": 22.0,
+  "board_distance_mm": [
+    224,
+    300,
+    425
+  ],
+  "created": "2026-10-24T18:27:35",
+  "check_job_sfm_focal": 1090.92
+}

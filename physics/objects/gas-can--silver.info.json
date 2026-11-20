@@ -1,0 +1,36 @@
+{
+ "splats": 18567,
+ "grid": [
+  113,
+  37,
+  38
+ ],
+ "voxel_m": 0.0019230769230769232,
+ "size_m": [
+  0.2017,
+  0.0519,
+  0.0556
+ ],
+ "volume_cm3": 335.8,
+ "solidity": 1.223,
+ "convex_parts": 1,
+ "vertices": 12084,
+ "faces": 24164,
+ "scale_to_m": 0.0637723055633876,
+ "density_level": 0.5744561642408367,
+ "primitives": [
+  "cylinder"
+ ],
+ "faces_written": 24164,
+ "name": "gas-can--silver",
+ "mass_kg": 0.101,
+ "files": [
+  "gas-can--silver.stl",
+  "gas-can--silver.obj",
+  "gas-can--silver.ply",
+  "gas-can--silver.physics.json"
+ ],
+ "size_cm": 20.0,
+ "density": 300,
+ "job": "20261113-215535-IMG_8900-5851"
+}

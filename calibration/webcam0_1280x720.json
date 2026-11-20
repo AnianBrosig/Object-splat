@@ -1,0 +1,28 @@
+{
+  "camera": "MacBook Pro 2019 FaceTime HD (webcam 0)",
+  "source": "videos/webcam0_20261024-211950.mp4",
+  "width": 1280,
+  "height": 720,
+  "model": "PINHOLE",
+  "fx": 947.781,
+  "fy": 947.781,
+  "cx": 632.111,
+  "cy": 361.059,
+  "dist": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rms_px": 1.7734,
+  "views": 48,
+  "pattern": [
+    6,
+    6
+  ],
+  "square_mm": 22.0,
+  "f_bootstrap_std_px": 2.9,
+  "hfov_deg": 68.06,
+  "distortion": "pinhole (pinhole rms 1.773, k1+k2 rms 1.701; distortion kept only if it lowers rms by > 15 %)",
+  "created": "2026-10-24 21:28:23"
+}

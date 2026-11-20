@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>viewer test</title>
+<script type="importmap">{"imports": {"three": "/static/vendor/three.module.js"}}</script>
+<style>html,body{margin:0;background:#222;height:100%}#box{position:absolute;inset:0}</style></head><body><div id="box"></div>
+<script type="module">
+import * as V from "/static/viewer.js";
+const q = new URLSearchParams(location.search);
+const job = q.get("job"), file = q.get("file") || "outputs/splat.ply";
+const info = await (await fetch(`/api/jobs/${job}/splats`)).json();
+const x = info.find(i => i.path === file) || info[0];
+window.__log = [];
+try { const ok = await V.show(document.getElementById("box"), `/api/jobs/${job}/files/${x.path}`, x.view, m => window.__log.push(m));
+  document.title = "viewer " + (ok ? "ready" : "failed: " + window.__log.join(";")); } catch (e) { document.title = "viewer error: " + e.message; document.body.append(e.stack); }
+</script></body></html>

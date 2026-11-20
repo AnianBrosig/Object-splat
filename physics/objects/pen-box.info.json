@@ -1,0 +1,36 @@
+{
+ "splats": 26148,
+ "grid": [
+  113,
+  35,
+  69
+ ],
+ "voxel_m": 0.0014563106796116503,
+ "size_m": [
+  0.1514,
+  0.0383,
+  0.0873
+ ],
+ "volume_cm3": 343.4,
+ "solidity": 1.001,
+ "convex_parts": 1,
+ "vertices": 25068,
+ "faces": 50124,
+ "scale_to_m": 0.06023031421745524,
+ "density_level": 0.38839833736419666,
+ "primitives": [
+  "box"
+ ],
+ "faces_written": 50124,
+ "name": "pen-box",
+ "mass_kg": 0.086,
+ "files": [
+  "pen-box.stl",
+  "pen-box.obj",
+  "pen-box.ply",
+  "pen-box.physics.json"
+ ],
+ "size_cm": 15.0,
+ "density": 250,
+ "job": "20261024-164201-IMG_8651-0d63"
+}

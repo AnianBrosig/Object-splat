@@ -1,0 +1,10 @@
+{
+  "note": "size_cm is the length of the longest side of the real object: the reconstruction has no units, so check these (they are estimates). density is kg per m3 of the solid (packaged goods are mostly air: 150-400).",
+  "objects": [
+    {"job": "20261024-164201-IMG_8651-0d63", "name": "pen box", "size_cm": 15.0, "density": 250},
+    {"job": "20261113-215535-IMG_8900-5851", "name": "gas can (silver)", "size_cm": 20.0, "density": 300},
+    {"job": "20261113-215535-IMG_8901-5c68", "name": "gas can", "size_cm": 20.0, "density": 300},
+    {"job": "20261113-215535-IMG_8902-25f5", "name": "hacky sack", "size_cm": 6.5, "density": 250},
+    {"job": "20261116-222145-IMG_8924-1978", "name": "noodle cup", "size_cm": 12.5, "density": 200}
+  ]
+}
